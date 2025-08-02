@@ -80,11 +80,11 @@ const Contact = () => {
               <span>Hyderabad, Telangana, India</span>
             </div>
           </div>
-          <div className="flex-1 w-full mt-4">
-            <form onSubmit={handleSend} className="space-y-4">
+          <div className="flex-1 justify-center items-center mx-w-sm mt-4 mb-4">
+            <form onSubmit={handleSend} className="space-y-6">
               {/* <input type="hidden" name="access_key" value="97473482-4ee0-4310-b9a9-47a94344881a"></input> */}
               <div>
-                <label htmlFor="name" className="block mr-2">
+                <label htmlFor="name">
                   Your Name
                 </label>
                 <input
@@ -132,12 +132,12 @@ const Contact = () => {
               </button>
               {status === "success" && (
                 <p className="text-sm text-green-400 mt-4">
-                  Thank you for reaching out, I'll get back to you soon.
+                 ✅ Thank you for reaching out, I'll get back to you soon.
                 </p>
               )}
               {status === "error" && (
                 <p className="text-sm text-red-500 mt-4">
-                  Something went wrong, Please try again.
+                 ❌ Something went wrong, Please try again.
                 </p>
               )}
             </form>

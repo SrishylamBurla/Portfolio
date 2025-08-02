@@ -5,7 +5,7 @@ const Navbar = () => {
             <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-600">
                 <a href="/">SRISHYLAM</a>
             </div>
-            <div className="space-x-6">
+            <div className="space-x-6 hidden md:flex">
                 <a href="#Hero" className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-red-500">Home</a>
                 <a href="#about" className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-red-500">About</a>
                 <a href="#projects" className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-red-500">Projects</a>
