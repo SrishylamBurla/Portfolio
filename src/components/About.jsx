@@ -1,10 +1,13 @@
 import { useState } from "react";
+import ScrollFadeIn from "./ScrollInFade";
 
 const About = () => {
   const [activeTab, setActiveTab] = useState("education");
+  
   return (
     <div className="bg-black text-white py-24">
       <div className="container px-8 md:px-10 lg:px-24 mx-auto" id="about">
+        <ScrollFadeIn direction="up">
         <h1 className="text-3xl text-center font-bold mb-12">About Me</h1>
         <div className="flex flex-col md:flex-row space-x-8 items-center py-8">
           <img
@@ -113,9 +116,10 @@ const About = () => {
               </div> */}
             </div>
           </div>
-        </div>
+        </div></ScrollFadeIn>
       </div>
       <div className="flex justify-center mt-8 space-x-6">
+        <ScrollFadeIn direction="up" >
         <button
           onClick={() => setActiveTab("education")}
           className={`text-2xl font-semibold border-b-2 transition duration-300 ${
@@ -125,7 +129,8 @@ const About = () => {
           }`}
         >
           Education
-        </button>
+        </button></ScrollFadeIn>
+        <ScrollFadeIn direction="up" >
         <button
           onClick={() => setActiveTab("experience")}
           className={`text-2xl font-semibold border-b-2 transition duration-300 ${
@@ -135,9 +140,10 @@ const About = () => {
           }`}
         >
           Experience
-        </button>
+        </button></ScrollFadeIn>
       </div>
       {activeTab === "education" ? (
+        <ScrollFadeIn direction="up" >
         <div className="space-y-4 grid grid-cols-1 justify-items-center mt-20 mb-10 mx-10">
           <div className="border border-emerald-400 rounded-lg p-4 w-full max-w-2xl bg-[#1a1a1a]">
             <h3 className="text-xl font-bold">Bachelor of Technology</h3>
@@ -152,8 +158,9 @@ const About = () => {
             <p className="text-gray-400">Vikas Junior College - (2013–2015)</p>
             <p className="text-gray-400">Peddapally, Telangana</p>
           </div>
-        </div>
+        </div></ScrollFadeIn>
       ) : (
+        <ScrollFadeIn direction="up" >
         <div className="space-y-4 grid grid-cols-1 justify-items-center mt-20 mx-10">
           <div className="border border-emerald-400 rounded-lg p-4 w-full max-w-2xl bg-[#1a1a1a]">
             <h3 className="text-xl font-bold">IT Recruiter</h3>
@@ -175,7 +182,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div></ScrollFadeIn>
       )}
     </div>
   );
