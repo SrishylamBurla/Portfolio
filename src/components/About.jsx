@@ -22,7 +22,7 @@ const About = () => {
               learning new technologies and building impactful web applications.
               I have hands-on experience in developing responsive frontend and
               backend applications using technologies like React.js, Node.js,
-              HTML, CSS, and JavaScript and Next.js. I focus on writing clean,
+              HTML, CSS, JavaScript and Next.js. I focus on writing clean,
               maintainable code and building user-friendly, scalable solutions.{" "}
             </p>
             <div className="space-y-4">
