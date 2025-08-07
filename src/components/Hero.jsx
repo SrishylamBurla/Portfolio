@@ -20,7 +20,7 @@ const Hero = () => {
           initial={{ x: "-100%", opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: "100%", opacity: 0 }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 1 }}
         >
           <h1 className="text-4xl font-bold mb-8">
             I'm{" "}
