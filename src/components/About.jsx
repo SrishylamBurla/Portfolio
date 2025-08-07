@@ -165,7 +165,7 @@ const About = () => {
           <div className="border border-emerald-400 rounded-lg p-4 w-full max-w-2xl bg-[#1a1a1a]">
             <h3 className="text-xl font-bold">IT Recruiter</h3>
             <div className="text-gray-400">
-              SCreatives Software Pvt Ltd. - (July-2021 to Dec-2022)
+              SCreatives Software Pvt Ltd. - (July-2021 to April-2022)
               <br />
               <div className="mt-4">
                 <span className="font-semibold text-gray-300 ">
