@@ -49,7 +49,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-black text-white py-20" id="contact">
+    <div className="bg-black text-white py-20 sm:py-2" id="contact">
       <ScrollFadeIn direction="up">
         <div className="container px-8 md:px-10 lg:px-24 mx-auto" id="projects">
           <h1 className="text-3xl text-center font-bold mb-20">Contact Me</h1>
