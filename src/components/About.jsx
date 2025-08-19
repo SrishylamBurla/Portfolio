@@ -5,7 +5,7 @@ const About = () => {
   const [activeTab, setActiveTab] = useState("education");
   
   return (
-    <div className="bg-black text-white py-24">
+    <div className="bg-black text-white py-2 md:py-24">
       <div className="container px-8 md:px-10 lg:px-24 mx-auto" id="about">
         <ScrollFadeIn direction="up">
         <h1 className="text-3xl text-center font-bold mb-12">About Me</h1>
@@ -22,7 +22,7 @@ const About = () => {
               learning new technologies and building impactful web applications.
               I have hands-on experience in developing responsive frontend and
               backend applications using technologies like React.js, Node.js,
-              HTML, CSS, and JavaScript and Next.js. I focus on writing clean,
+              HTML, CSS, JavaScript and Next.js. I focus on writing clean,
               maintainable code and building user-friendly, scalable solutions.{" "}
             </p>
             <div className="space-y-4">
@@ -166,7 +166,7 @@ const About = () => {
           <div className="border border-emerald-400 rounded-lg p-4 w-full max-w-2xl bg-[#1a1a1a]">
             <h3 className="text-xl font-bold">IT Recruiter</h3>
             <div className="text-gray-400">
-              SCreatives Software Pvt Ltd. - (July-2021 to Dec-2022)
+              SCreatives Software Pvt Ltd. - (July-2021 to April-2022)
               <br />
               <div className="mt-4">
                 <span className="font-semibold text-gray-300 ">

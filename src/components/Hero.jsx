@@ -21,7 +21,7 @@ const Hero = () => {
           initial={{ x: "-100%", opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: "100%", opacity: 0 }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 1 }}
         >
         <ScrollFadeIn direction="up">
           <h1 className="text-4xl font-bold mb-8">
@@ -45,7 +45,7 @@ const Hero = () => {
             </button>
           </a>
           <a
-            href="/Srishylam-Resume.pdf"
+            href="/Srishylam-Mern-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
