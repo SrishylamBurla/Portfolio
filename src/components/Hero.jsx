@@ -1,13 +1,14 @@
 import { AnimatePresence, motion } from "framer-motion";
+import ScrollFadeIn from "./ScrollInFade";
 
 const Hero = () => {
   return (
     <AnimatePresence>
-      <motion.Div
+      <motion.div
         className="bg-black text-white text-center px-6 py-24"
         id="hero"
       >
-        <motion.Div initial={{opacity: 0, scale:0}}
+        <motion.div initial={{opacity: 0, scale:0}}
           animate={{opacity:1, scale: 1}}
           exit={{opacity:0, scale:0}}
           transition={{duration: 1}}>
@@ -15,13 +16,14 @@ const Hero = () => {
           className="rounded-full mx-auto mb-8 w-48 h-48 object-cover transform transition-transform duration-300 hover:scale-105"
           src="./ezgif.com-resize.png"
           alt="hero-image"
-        /></motion.Div>
-        <motion.Div
+        /></motion.div>
+        <motion.div
           initial={{ x: "-100%", opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: "100%", opacity: 0 }}
           transition={{ duration: 1.5 }}
         >
+        <ScrollFadeIn direction="up">
           <h1 className="text-4xl font-bold mb-8">
             I'm{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
@@ -32,7 +34,7 @@ const Hero = () => {
         
         <p className="text-lg mb-6 text-gray-400">
           I specialize in building modern and responsive web applications
-        </p>
+        </p></ScrollFadeIn>
         <div className="space-x-4">
           <a href="#contact">
             <button
@@ -54,8 +56,8 @@ const Hero = () => {
               Resume
             </button>
           </a>
-        </div></motion.Div>
-      </motion.Div>
+        </div></motion.div>
+      </motion.div>
     </AnimatePresence>
   );
 };

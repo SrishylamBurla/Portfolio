@@ -33,6 +33,7 @@ const About = () => {
                 { label: "NodeJS", width: "w-9/12" },
                 { label: "MongoDB", width: "w-9/12"},
                 { label: "NextJS", width: "w-8/12"},
+                { label: "Figma - UI-UX", width: "w-8/12"}
               ].map(({ label, width }, idx) => (
                 <div
                   key={idx}
