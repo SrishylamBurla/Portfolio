@@ -145,7 +145,7 @@ const About = () => {
       </div>
       {activeTab === "education" ? (
         
-        <div className="space-y-4 grid grid-cols-1 justify-items-center mt-20 mb-10 mx-10"><ScrollFadeIn direction="up">
+        <div className="space-y-4 grid grid-cols-1 justify-items-center mt-20 mb-10 mx-4"><ScrollFadeIn direction="up">
           <div className="border border-emerald-400 rounded-lg p-4 bg-[#1a1a1a] max-w-2xl md:w-[750px]">
             <h3 className="text-xl font-bold">Bachelor of Technology</h3>
             <p className="text-gray-400">
@@ -162,7 +162,7 @@ const About = () => {
         </div>
       ) : (
         <ScrollFadeIn direction="up" >
-        <div className="space-y-4 grid grid-cols-1 justify-items-center mt-20 mx-10">
+        <div className="space-y-4 grid grid-cols-1 justify-items-center mt-20 mx-4">
           <div className="border border-emerald-400 rounded-lg p-4 w-full max-w-2xl bg-[#1a1a1a]">
             <h3 className="text-xl font-bold">IT Recruiter</h3>
             <div className="text-gray-400">
