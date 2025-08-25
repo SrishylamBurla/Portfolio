@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { FaEnvelope, FaMapMarkedAlt, FaPhoneAlt } from "react-icons/fa";
 import { toast } from "react-toastify";
@@ -7,7 +8,6 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState(null);
 
@@ -21,15 +21,15 @@ const Contact = () => {
       email,
       message,
     };
+
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
       const data = await res.json();
+
       if (data.success) {
         toast.success("Message sent successfully");
         setName("");
@@ -49,97 +49,120 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-black text-white py-20 sm:py-2" id="contact">
+    <div className="bg-black text-white py-20" id="contact">
       <ScrollFadeIn direction="up">
-        <div className="container px-2 md:px-10 lg:px-24 mx-auto" id="projects">
-          <h1 className="text-3xl text-center font-bold mb-8 md:mb-20">Contact Me</h1>
+        <div className="container px-4 md:px-10 lg:px-24 mx-auto">
+          <h1 className="text-3xl text-center font-bold mb-20 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
+            Contact Me
+          </h1>
 
-          <div className="flex flex-col md:flex-row space-x-2 justify-items-center">
-            <div className="flex-1">
-              <div className="px-2 md:px-4 py-4">
-                <h1 className="text-center md:text-left text-2xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
-                  Let's Talk
-                </h1>
-                <p className="text-center md:text-left">
-                  I'm open to discussing web development projects and
-                  partnership opportunities
-                </p>
+          <div className="flex flex-col md:flex-row gap-12">
+            {/* Contact Info */}
+            <div className="flex-1 flex flex-col items-center text-center md:items-start md:text-left">
+              <h2 className="text-2xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
+                Let's Talk
+              </h2>
+              <p className="mb-6 text-gray-300">
+                I'm open to discussing web development projects and partnership
+                opportunities.
+              </p>
+
+              <div className="space-y-4 text-gray-200">
+                <div className="flex items-center">
+                  <FaPhoneAlt className="text-green-400 mr-3" />
+                  <span>+91 703-618-8347</span>
+                </div>
+                <div className="flex items-center">
+                  <FaEnvelope className="text-green-400 mr-3" />
+                  <a
+                    href="mailto:srishylamburla1@gmail.com"
+                    className="hover:underline"
+                  >
+                    srishylamburla1@gmail.com
+                  </a>
+                </div>
+                <div className="flex items-center">
+                  <FaMapMarkedAlt className="text-green-400 mr-3" />
+                  <span>Hyderabad, Telangana, India</span>
+                </div>
               </div>
-              <div className="flex flex-col justify-items-center md:items-start text-center md:text-left px-2 md:px-4 mb-6">
-              <div className="m-2">
-                <FaPhoneAlt className="inline-block text-green-400 mr-4" />
-                <span>+91 703-618-8347</span>
-              </div>
-              <div className="m-2">
-                <FaEnvelope className="inline-block text-green-400 mr-4" />
-                <a
-                  href="mailto:srishylamburla1@gmail.com"
-                  className="hover:underline"
-                >
-                  srishylamburla1@gmail.com
-                </a>
-              </div>
-              
-              <div className="m-2">
-                <FaMapMarkedAlt className="inline-block text-green-400 mr-4" />
-                <span>Hyderabad, Telangana, India</span>
-              </div></div>
             </div>
-            <div className="flex-1 justify-center items-center mx-w-sm mt-4 mb-4">
-              <form onSubmit={handleSend} className="space-y-6">
-                {/* <input type="hidden" name="access_key" value="97473482-4ee0-4310-b9a9-47a94344881a"></input> */}
+
+            {/* Form */}
+            <div className="flex-1">
+              <form
+                onSubmit={handleSend}
+                className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-6"
+              >
                 <div>
-                  <label htmlFor="name">Your Name</label>
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-gray-300"
+                  >
+                    Your Name
+                  </label>
                   <input
+                    id="name"
                     type="text"
-                    placeholder="Enter your name"
-                    name="name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     required
-                    className="w-full mt-2 p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-800"
+                    placeholder="Enter your name"
+                    className="w-full mt-2 p-3 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:border-green-500"
                   />
                 </div>
+
                 <div>
-                  <label htmlFor="email">Your Email</label>
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-300"
+                  >
+                    Your Email
+                  </label>
                   <input
+                    id="email"
                     type="email"
-                    name="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                    required
                     placeholder="Enter your email"
-                    required
-                    className="w-full mt-2 p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-800"
+                    className="w-full mt-2 p-3 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:border-green-500"
                   />
                 </div>
+
                 <div>
-                  <label htmlFor="message">Message</label>
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-300"
+                  >
+                    Message
+                  </label>
                   <textarea
-                    type="text"
-                    name="message"
-                    value={message}
-                    required
-                    onChange={(e) => setMessage(e.target.value)}
-                    placeholder="Enter your message"
+                    id="message"
                     rows="5"
-                    className="w-full mt-2 p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-800"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    required
+                    placeholder="Enter your message"
+                    className="w-full mt-2 p-3 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:border-green-500"
                   />
                 </div>
+
                 <button
                   type="submit"
                   disabled={loading}
-                  className="btn btn-block text-white bg-gradient-to-r from-green-400 to-blue-500 
-            hover:scale-105 px-8 py-2 rounded-xl"
+                  className="w-full bg-gradient-to-r from-green-400 to-blue-500 text-white py-3 rounded-lg font-semibold shadow-md hover:scale-105 transition-transform"
                 >
                   {loading ? "Sending..." : "Send"}
                 </button>
+
                 {status === "success" && (
-                  <p className="text-sm text-green-400 mt-4">
+                  <p className="text-sm text-green-400 mt-2">
                     ✅ Thank you for reaching out, I'll get back to you soon.
                   </p>
                 )}
                 {status === "error" && (
-                  <p className="text-sm text-red-500 mt-4">
+                  <p className="text-sm text-red-500 mt-2">
                     ❌ Something went wrong, Please try again.
                   </p>
                 )}

@@ -1,3 +1,4 @@
+
 import ProjectCard from "./ProjectCard";
 import ScrollFadeIn from "./ScrollInFade";
 
@@ -25,15 +26,19 @@ const Projects = () => {
   ];
 
   return (
-    <div className="bg-black text-white py-24">
+    <div className="bg-black text-white py-20">
       <div className="container px-4 md:px-10 lg:px-24 mx-auto" id="projects">
         <ScrollFadeIn direction="up">
-          <h1 className="text-3xl text-center font-bold mb-20">My Projects</h1>
+          
+          <h1 className="text-3xl text-center font-bold mb-20 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
+            My Projects
+          </h1>
         </ScrollFadeIn>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 justify-items-center">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 justify-items-center">
           {projects.map((project) => (
-            <ScrollFadeIn direction="up">
-              <ProjectCard key={project.id} project={project} />
+            <ScrollFadeIn direction="up" key={project.id}>
+              <ProjectCard project={project} />
             </ScrollFadeIn>
           ))}
         </div>
