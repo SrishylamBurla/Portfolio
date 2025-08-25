@@ -145,20 +145,20 @@ const About = () => {
       </div>
       {activeTab === "education" ? (
         
-        <div className="space-y-4 grid grid-cols-1 justify-items-center mt-20 mb-10 mx-4"><ScrollFadeIn direction="up">
-          <div className="border border-emerald-400 rounded-lg p-4 bg-[#1a1a1a] max-w-2xl md:w-[750px]">
+        <div className="space-y-4 grid grid-cols-1 justify-items-center mt-20 mb-10 mx-4">
+          <div className="border border-emerald-400 rounded-lg p-4 bg-[#1a1a1a] max-w-2xl w-full">
             <h3 className="text-xl font-bold">Bachelor of Technology</h3>
             <p className="text-gray-400">
               Electronics and Communication Engineering – St.Mary's Engineering
               College (2015–2019)
             </p>
             <p className="text-gray-400">Hyderabad, Telangana, India</p>
-          </div></ScrollFadeIn><ScrollFadeIn direction="up">
-          <div className="border border-emerald-400 rounded-lg p-4 bg-[#1a1a1a] max-w-2xl md:w-[750px]">
+          </div>
+          <div className="border border-emerald-400 rounded-lg p-4 bg-[#1a1a1a] max-w-2xl w-full">
             <h3 className="text-xl font-bold">Intermediate</h3>
             <p className="text-gray-400">Vikas Junior College - (2013–2015)</p>
             <p className="text-gray-400">Peddapally, Telangana, India</p>
-          </div></ScrollFadeIn>
+          </div>
         </div>
       ) : (
         <ScrollFadeIn direction="up" >

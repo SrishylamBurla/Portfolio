@@ -13,7 +13,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex-1">
-            <form className="flex flex-row w-full max-w-md">
+            <form className="flex flex-row w-full md:max-w-sm mx-auto">
               <input
                 type="email"
                 placeholder="Enter your email"
