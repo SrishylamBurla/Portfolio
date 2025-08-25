@@ -9,7 +9,7 @@ const About = () => {
       <div className="container px-2 md:px-10 lg:px-24 mx-auto" id="about">
         <ScrollFadeIn direction="up">
         <h1 className="text-3xl text-center font-bold mb-12">About Me</h1>
-        <div className="flex flex-col md:flex-row space-x-2 items-center py-8">
+        <div className="flex flex-col md:flex-row space-x-8 items-center py-8">
           <img
             className="rounded mx-auto mb-8 md:mb-2 w-72 h-90 object-cover 
             border border-emerald-400 transform transition-transform duration-300 hover:scale-105"
