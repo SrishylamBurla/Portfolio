@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import { ToastContainer } from "react-toastify";
 import { motion } from "framer-motion";
 import { useScroll } from "framer-motion";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -21,10 +22,11 @@ function App() {
           right: 0,
           height: 5,
           originX: 0,
-          zIndex: 1,
+          zIndex: 60,
           backgroundImage: "linear-gradient(to right, #f87171, #facc15)",
         }}
       />
+      <ScrollToTop />
       <Navbar />
       <Hero />
       <About />

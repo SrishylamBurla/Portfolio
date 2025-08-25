@@ -34,7 +34,7 @@ const Hero = () => {
         
         <p className="text-lg mb-6 text-gray-400">
           I specialize in building modern and responsive web applications
-        </p></ScrollFadeIn>
+        </p></ScrollFadeIn><ScrollFadeIn direction="up">
         <div className="space-x-4">
           <a href="#contact">
             <button
@@ -56,7 +56,7 @@ const Hero = () => {
               Resume
             </button>
           </a>
-        </div></motion.div>
+        </div></ScrollFadeIn></motion.div>
       </motion.div>
     </AnimatePresence>
   );

@@ -34,7 +34,7 @@ const About = () => {
                 { label: "MongoDB", width: "w-9/12"},
                 { label: "NextJS", width: "w-8/12"},
                 { label: "Figma - UI-UX", width: "w-8/12"}
-              ].map(({ label, width }, idx) => (
+              ].map(({ label, width }, idx) => (<ScrollFadeIn direction="up">
                 <div
                   key={idx}
                   className="flex flex-col md:flex-row md:items-center gap-2"
@@ -47,7 +47,7 @@ const About = () => {
                       className={`bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full transform transition-transform duration-300 hover:scale-105 ${width}`}
                     ></div>
                   </div>
-                </div>
+                </div></ScrollFadeIn>
               ))}
               {/* <div className="flex items-center">
                 <label htmlFor="htmlandcss" className="w-2/12">
@@ -144,22 +144,22 @@ const About = () => {
         </button></ScrollFadeIn>
       </div>
       {activeTab === "education" ? (
-        <ScrollFadeIn direction="up" >
-        <div className="space-y-4 grid grid-cols-1 justify-items-center mt-20 mb-10 mx-10">
-          <div className="border border-emerald-400 rounded-lg p-4 w-full max-w-2xl bg-[#1a1a1a]">
+        
+        <div className="space-y-4 grid grid-cols-1 justify-items-center mt-20 mb-10 mx-10"><ScrollFadeIn direction="up">
+          <div className="border border-emerald-400 rounded-lg p-4 bg-[#1a1a1a] max-w-2xl md:w-[750px]">
             <h3 className="text-xl font-bold">Bachelor of Technology</h3>
             <p className="text-gray-400">
               Electronics and Communication Engineering – St.Mary's Engineering
               College (2015–2019)
             </p>
-            <p className="text-gray-400">Hyderabad, Telangana</p>
-          </div>
-          <div className="border border-emerald-400 rounded-lg p-4 w-full max-w-2xl bg-[#1a1a1a]">
+            <p className="text-gray-400">Hyderabad, Telangana, India</p>
+          </div></ScrollFadeIn><ScrollFadeIn direction="up">
+          <div className="border border-emerald-400 rounded-lg p-4 bg-[#1a1a1a] max-w-2xl md:w-[750px]">
             <h3 className="text-xl font-bold">Intermediate</h3>
             <p className="text-gray-400">Vikas Junior College - (2013–2015)</p>
-            <p className="text-gray-400">Peddapally, Telangana</p>
-          </div>
-        </div></ScrollFadeIn>
+            <p className="text-gray-400">Peddapally, Telangana, India</p>
+          </div></ScrollFadeIn>
+        </div>
       ) : (
         <ScrollFadeIn direction="up" >
         <div className="space-y-4 grid grid-cols-1 justify-items-center mt-20 mx-10">
@@ -167,7 +167,8 @@ const About = () => {
             <h3 className="text-xl font-bold">IT Recruiter</h3>
             <div className="text-gray-400">
               SCreatives Software Pvt Ltd. - (July-2021 to April-2022)
-              <br />
+              <p className="text-gray-400">Hyderabad, Telangana, India</p>
+              <hr className="mt-4 border border-gray-600" />
               <div className="mt-4">
                 <span className="font-semibold text-gray-300 ">
                   Description:
