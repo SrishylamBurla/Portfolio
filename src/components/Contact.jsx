@@ -52,7 +52,7 @@ const Contact = () => {
     <div className="bg-black text-white py-20 sm:py-2" id="contact">
       <ScrollFadeIn direction="up">
         <div className="container px-2 md:px-10 lg:px-24 mx-auto" id="projects">
-          <h1 className="text-3xl text-center font-bold mb-20">Contact Me</h1>
+          <h1 className="text-3xl text-center font-bold mb-8 md:mb-20">Contact Me</h1>
 
           <div className="flex flex-col md:flex-row space-x-2 justify-items-center">
             <div className="flex-1">
@@ -65,7 +65,11 @@ const Contact = () => {
                   partnership opportunities
                 </p>
               </div>
-              <div className="text-center md:text-left">
+              <div className="flex flex-col justify-items-center md:items-start text-center md:text-left px-2 md:px-4 mb-6">
+              <div className="m-2">
+                <FaPhoneAlt className="inline-block text-green-400 mr-4" />
+                <span>+91 703-618-8347</span>
+              </div>
               <div className="m-2">
                 <FaEnvelope className="inline-block text-green-400 mr-4" />
                 <a
@@ -75,10 +79,7 @@ const Contact = () => {
                   srishylamburla1@gmail.com
                 </a>
               </div>
-              <div className="m-2">
-                <FaPhoneAlt className="inline-block text-green-400 mr-4" />
-                <span>+91 703-618-8347</span>
-              </div>
+              
               <div className="m-2">
                 <FaMapMarkedAlt className="inline-block text-green-400 mr-4" />
                 <span>Hyderabad, Telangana, India</span>
