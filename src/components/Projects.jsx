@@ -26,7 +26,7 @@ const Projects = () => {
 
   return (
     <div className="bg-black text-white py-24">
-      <div className="container px-8 md:px-10 lg:px-24 mx-auto" id="projects">
+      <div className="container px-2 md:px-10 lg:px-24 mx-auto" id="projects">
         <ScrollFadeIn direction="up">
           <h1 className="text-3xl text-center font-bold mb-20">My Projects</h1>
         </ScrollFadeIn>

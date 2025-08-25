@@ -51,12 +51,12 @@ const Contact = () => {
   return (
     <div className="bg-black text-white py-20 sm:py-2" id="contact">
       <ScrollFadeIn direction="up">
-        <div className="container px-8 md:px-10 lg:px-24 mx-auto" id="projects">
+        <div className="container px-2 md:px-10 lg:px-24 mx-auto" id="projects">
           <h1 className="text-3xl text-center font-bold mb-20">Contact Me</h1>
 
-          <div className="flex flex-col md:flex-row space-x-6 justify-items-center">
+          <div className="flex flex-col md:flex-row space-x-2 justify-items-center">
             <div className="flex-1">
-              <div className="p-4">
+              <div className="px-2 md:px-4 py-4">
                 <h1 className="text-2xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
                   Let's Talk
                 </h1>
