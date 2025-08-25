@@ -57,14 +57,15 @@ const Contact = () => {
           <div className="flex flex-col md:flex-row space-x-2 justify-items-center">
             <div className="flex-1">
               <div className="px-2 md:px-4 py-4">
-                <h1 className="text-2xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
+                <h1 className="text-center md:text-left text-2xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
                   Let's Talk
                 </h1>
-                <p>
+                <p className="text-center md:text-left">
                   I'm open to discussing web development projects and
                   partnership opportunities
                 </p>
               </div>
+              <div className="text-center md:text-left">
               <div className="m-2">
                 <FaEnvelope className="inline-block text-green-400 mr-4" />
                 <a
@@ -81,7 +82,7 @@ const Contact = () => {
               <div className="m-2">
                 <FaMapMarkedAlt className="inline-block text-green-400 mr-4" />
                 <span>Hyderabad, Telangana, India</span>
-              </div>
+              </div></div>
             </div>
             <div className="flex-1 justify-center items-center mx-w-sm mt-4 mb-4">
               <form onSubmit={handleSend} className="space-y-6">
