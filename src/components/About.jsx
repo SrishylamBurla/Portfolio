@@ -23,7 +23,7 @@ const About = () => {
             />
 
             <div className="flex-1">
-              <p className="text-gray-300 text-base leading-relaxed mb-8">
+              <p className="text-gray-300 text-base leading-relaxed mb-8 text-justify">
                 A dedicated Full Stack Developer with a strong passion for
                 learning new technologies and building impactful web applications.
                 I have hands-on experience in developing responsive frontend and
