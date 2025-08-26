@@ -54,7 +54,7 @@ const Navbar = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="absolute top-full right-4 mt-2 w-30 bg-slate-900 rounded-xl shadow-lg flex flex-col items-start p-4 space-y-4 md:hidden"
+            className="absolute top-full right-4 mt-2 w-30 bg-[#000000] bg-[url('https://www.transparenttextures.com/patterns/dark-wood.png')] rounded-xl shadow-lg drop-shadow-[0_0_1px_white] flex flex-col items-start p-4 space-y-4 md:hidden"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
