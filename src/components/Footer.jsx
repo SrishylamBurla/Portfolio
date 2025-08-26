@@ -2,7 +2,7 @@ import { FaFacebook, FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-[#000000] bg-[url('https://www.transparenttextures.com/patterns/dark-wood.png')] text-white">
       <div className="container mx-auto px-4 md:px-16 lg:px-24">
         <div className="flex flex-col md:flex-row items-items-start space-y-6 py-10">
           <div className="flex-1 px-4">

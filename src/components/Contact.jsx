@@ -49,7 +49,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-black text-white py-20" id="contact">
+    <div className="bg-[#000000] bg-[url('https://www.transparenttextures.com/patterns/argyle.png')] text-white py-20" id="contact">
       <ScrollFadeIn direction="up">
         <div className="container px-4 md:px-10 lg:px-24 mx-auto">
           <h1 className="text-3xl text-center font-bold mb-20 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">

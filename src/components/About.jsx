@@ -6,7 +6,7 @@ const About = () => {
   const [activeTab, setActiveTab] = useState("education");
 
   return (
-    <div className="bg-black text-white py-10 md:py-20 lg:py-28">
+    <div className="bg-[#000000] bg-[url('https://www.transparenttextures.com/patterns/argyle.png')] text-white py-10 md:py-20 lg:py-28">
       <div className="container px-4 sm:px-6 md:px-10 lg:px-24 mx-auto" id="about">
         <ScrollFadeIn direction="up">
           {/* Title */}

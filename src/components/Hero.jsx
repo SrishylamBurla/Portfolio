@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <AnimatePresence>
       <motion.div
-        className="bg-black text-white text-center px-2 md:px-6 py-24"
+        className="bg-[#000000] bg-[url('https://www.transparenttextures.com/patterns/argyle.png')] min-h-screen text-white text-center px-2 md:px-6 py-24"
         id="hero"
       >
         <motion.div initial={{opacity: 0, scale:0}}

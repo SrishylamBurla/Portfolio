@@ -26,7 +26,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="bg-black text-white py-20">
+    <div className="bg-[#000000] bg-[url('https://www.transparenttextures.com/patterns/argyle.png')] text-white py-20">
       <div className="container px-4 md:px-10 lg:px-24 mx-auto" id="projects">
         <ScrollFadeIn direction="up">
           
