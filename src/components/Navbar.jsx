@@ -63,7 +63,9 @@ const Navbar = () => {
             <a
               href="#Hero"
               onClick={() => setIsOpen(false)}
-              className="textext-lg text-white relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-gradient-to-r from-purple-500 to-pink-500 after:transition-all after:duration-300 hover:after:w-full hover:text-purple-400"
+              className="text-lg text-white relative after:content-[''] 
+              after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-gradient-to-r
+               from-purple-500 to-pink-500 after:transition-all after:duration-300 hover:after:w-full hover:text-purple-400"
             >
               Home
             </a>
