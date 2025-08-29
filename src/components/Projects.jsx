@@ -7,7 +7,7 @@ const Projects = () => {
       id: "1",
       name: "Expenses-tracker",
       image: "Screenshot 2025-08-28 211213.png",
-      description: "Keep track of your everyday expenses.",
+      description: "Keep track of your daily expenses.",
       TechStack: "ReactJS | NodeJS | MongoDB | Redux | JavaScript",
       Url: "https://expenses-tracker-iygh.vercel.app",
       Github: "https://github.com/SrishylamBurla/Expenses-tracker.git",

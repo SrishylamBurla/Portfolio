@@ -40,22 +40,22 @@ const ProjectCard = ({ project }) => {
         {/* Buttons */}
         <div className="flex gap-4 mt-5">
           <a
-            href={project.url}
+            href={project.Url}
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 rounded-lg text-sm flex items-center gap-2 
       font-semibold bg-gradient-to-r from-green-400 to-blue-500 hover:scale-105 transition"
           >
-            Url <FaExternalLinkAlt className="text-white" />
+            <FaExternalLinkAlt className="text-white" /> Url
           </a>
           <a
-            href={project.github}
+            href={project.Github}
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 rounded-lg text-sm flex items-center gap-2 
       font-semibold bg-gradient-to-r from-red-400 to-yellow-500 hover:scale-105 transition"
           >
-            Github <FaGithub className="text-white" />
+            <FaGithub className="text-white" /> Github
           </a>
         </div>
       </div>
