@@ -92,7 +92,7 @@ const Contact = () => {
             <div className="flex-1">
               <form
                 onSubmit={handleSend}
-                className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-6"
+                className="bg-black p-6 rounded-xl shadow-lg space-y-6 shadow-purple-500/20 hover:scale-105 transition-transform duration-300 border border-gray-900"
               >
                 <div>
                   <label

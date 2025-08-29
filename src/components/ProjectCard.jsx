@@ -2,8 +2,8 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="bg-[#1E1E1E] rounded-2xl shadow-md shadow-white/5 overflow-hidden 
-    w-full max-w-md transition-transform hover:scale-105">
+    <div className={`bg-black border border-gray-800 rounded-2xl shadow-lg ${project.shadowColor} overflow-hidden 
+    w-full max-w-md transition-transform hover:scale-105`}>
       <img
         src={project.image}
         alt="Project-img"

@@ -11,6 +11,7 @@ const Projects = () => {
       TechStack: "ReactJS | NodeJS | MongoDB | Redux | JavaScript",
       Url: "https://expenses-tracker-iygh.vercel.app",
       Github: "https://github.com/SrishylamBurla/Expenses-tracker.git",
+      shadowColor: "shadow-emerald-500/40",
     },
     {
       id: "2",
@@ -21,6 +22,7 @@ const Projects = () => {
       TechStack: "ReactJS | NextJS | MongoDB",
       Url: "https://property-pulse-green-pi.vercel.app",
       Github: "https://github.com/SrishylamBurla/property-pulse.git",
+      shadowColor: "shadow-blue-500/40",
     },
     {
       id: "3",
@@ -30,6 +32,7 @@ const Projects = () => {
       TechStack: "ReactJS | ExpressJS | MongoDB | JavaScript | NodeJS",
       Url: "https://proshop-7fr5.onrender.com",
       Github: "https://github.com/SrishylamBurla/proshop-ecommerce.git",
+      shadowColor: "shadow-pink-500/40",
     },
   ];
 

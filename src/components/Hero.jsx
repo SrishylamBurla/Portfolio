@@ -11,9 +11,10 @@ const Hero = () => {
         <motion.div initial={{opacity: 0, scale:0}}
           animate={{opacity:1, scale: 1}}
           exit={{opacity:0, scale:0}}
-          transition={{duration: 1}}>
+          transition={{duration: 1}}
+          >
         <img
-          className="rounded-full mx-auto mb-8 w-48 h-48 object-cover transform transition-transform duration-300 hover:scale-105"
+          className="rounded-full mx-auto mb-8 w-48 h-48 object-cover transform transition-transform duration-300 hover:scale-105 shadow-lg shadow-blue-400/40"
           src="./ezgif.com-resize.png"
           alt="hero-image"
         /></motion.div>
@@ -26,7 +27,7 @@ const Hero = () => {
         <ScrollFadeIn direction="up">
           <h1 className="text-4xl font-bold mb-8">
             I'm{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-500">
               Srishylam
             </span>
             , Full Stack Developer
@@ -39,7 +40,7 @@ const Hero = () => {
           <a href="#contact">
             <button
               className="btn btn-block text-white bg-gradient-to-r
-             from-green-400 to-blue-500 px-4 py-2 rounded-full transform transition-transform duration-300 hover:scale-105"
+             from-green-400 to-blue-500 px-4 py-2 rounded-full transform transition-transform duration-300 hover:scale-105 shadow-lg"
             >
               Contact Me
             </button>

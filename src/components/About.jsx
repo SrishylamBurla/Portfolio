@@ -83,7 +83,7 @@ const About = () => {
       {/* Education / Experience Content */}
       {activeTab === "education" ? (
         <div className="grid grid-cols-1 justify-items-center gap-6 mt-12 mb-10 px-4">
-          <div className="border border-emerald-400 rounded-lg p-6 bg-[#1a1a1a] max-w-2xl w-full">
+          <div className="border border-emerald-400 rounded-lg p-6 bg-black max-w-2xl w-full shadow-lg shadow-blue-400/30 hover:scale-105 transition-transform duration-300">
             <h3 className="text-lg font-bold">Bachelor of Technology</h3>
             <p className="text-gray-300 text-base">
               Electronics and Communication Engineering – St.Mary's Engineering
@@ -92,7 +92,7 @@ const About = () => {
             <p className="text-gray-300 text-base">Hyderabad, Telangana, India</p>
           </div>
 
-          <div className="border border-emerald-400 rounded-lg p-6 bg-[#1a1a1a] max-w-2xl w-full">
+          <div className="border border-emerald-400 rounded-lg p-6 bg-black max-w-2xl w-full shadow-lg shadow-violet-400/30 hover:scale-105 transition-transform duration-300">
             <h3 className="text-lg font-bold">Intermediate</h3>
             <p className="text-gray-300 text-base">
               Vikas Junior College - (2013–2015)
@@ -103,7 +103,7 @@ const About = () => {
       ) : (
         <ScrollFadeIn direction="up">
           <div className="grid grid-cols-1 justify-items-center gap-6 mt-12 mb-10 px-4">
-            <div className="border border-emerald-400 rounded-lg p-6 bg-[#1a1a1a] max-w-2xl w-full">
+            <div className="border border-emerald-400 rounded-lg p-6 bg-black max-w-2xl w-full shadow-lg shadow-violet-400/30 hover:scale-105 transition-transform duration-300">
               <h3 className="text-lg font-bold">IT Recruiter</h3>
               <div className="text-gray-300 text-base">
                 SCreatives Software Pvt Ltd. - (July-2021 to April-2022)
