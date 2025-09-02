@@ -99,7 +99,7 @@ const Contact = () => {
                     htmlFor="name"
                     className="block text-sm font-medium text-gray-300"
                   >
-                    Your Name
+                    Name
                   </label>
                   <input
                     id="name"
@@ -117,7 +117,7 @@ const Contact = () => {
                     htmlFor="email"
                     className="block text-sm font-medium text-gray-300"
                   >
-                    Your Email
+                    Email
                   </label>
                   <input
                     id="email"
